@@ -6,7 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootswatch/dist/darkly/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
+    <link rel="stylesheet" href="node_modules/flag-icon-css/flags/1x1/">
 <style>
+  
     .barca-primary {
   background-color: rgb(168, 19, 62) ;
   color: white;
@@ -26,6 +30,10 @@
   background-color: #cc9900 ;
   color: black;
 }
+
+.nav-tabs {
+      border-bottom: none ;
+    }
     </style>
 </head>
 
@@ -85,6 +93,59 @@
     </div>
   </div>
 </nav>
+
+<div class="container mt-3 ">
+  <h2 class="text-center">Hráči</h2>
+  <br>
+  <ul class="nav nav-tabs justify-content-center" role="tablist">
+    <li class="nav-item barca-accent rounded">
+      <a class="nav-link active" data-bs-toggle="tab" href="#brankari">Brankáři</a>
+    </li>
+    <li class="nav-item barca-accent rounded">
+      <a class="nav-link" data-bs-toggle="tab" href="#obranci">Obránci</a>
+    </li>
+    <li class="nav-item barca-accent rounded">
+      <a class="nav-link" data-bs-toggle="tab" href="#zaloznici">Záložníci</a>
+    </li>
+    <li class="nav-item barca-accent rounded">
+      <a class="nav-link" data-bs-toggle="tab" href="#utocnici">Útočníci</a>
+    </li>
+  </ul>
+
+  
+  <div class="tab-content">
+    <div id="brankari" class="container tab-pane active"><br>
+      <h3 class="text-center" style="text-decoration: underline;">Brankáři</h3>
+      <div class="container mt-3">
+  
+        
+  <div class="card" style="width:350px">
+    <img class="card-img-top" src="img/terstegen.webp" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Marc-Andre ter Stegen</h4>
+      <p class="card-text">Národnost <span class="flag-icons flag-icons-de"></span></p>
+      
+    </div>
+  </div>
+  <br>
+
+    </div>
+    <div id="obranci" class="container tab-pane fade"><br>
+      <h3>Obránci</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="zaloznici" class="container tab-pane fade"><br>
+      <h3>Záložníci</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="utocnici" class="container tab-pane fade"><br>
+      <h3>Útočníci</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+</div>
+</div>
+
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
