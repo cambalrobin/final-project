@@ -9,32 +9,7 @@
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
     <link rel="stylesheet" href="node_modules/flag-icon-css/flags/1x1/">
-<style>
-  
-    .barca-primary {
-  background-color: rgb(168, 19, 62) ;
-  color: white;
-}
-
-.barca-secondary {
-  background-color: rgb(0, 77, 152);
-  color: white;
-}
-
-.barca-accent {
-  background-color: rgb(237, 187, 0) ;
-  color: black;
-}
-
-.barca-accent:hover {
-  background-color: #cc9900 ;
-  color: black;
-}
-
-.nav-tabs {
-      border-bottom: none ;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="barca-secondary">
@@ -97,54 +72,306 @@
 <div class="container mt-3 ">
   <h2 class="text-center">Hráči</h2>
   <br>
-  <ul class="nav nav-tabs justify-content-center" role="tablist">
-    <li class="nav-item barca-accent rounded">
+  <ul class="nav nav-tabs justify-content-center " role="tablist">
+    <li class="nav-item barca-accent rounded m-2">
       <a class="nav-link active" data-bs-toggle="tab" href="#brankari">Brankáři</a>
     </li>
-    <li class="nav-item barca-accent rounded">
+    <li class="nav-item barca-accent rounded m-2">
       <a class="nav-link" data-bs-toggle="tab" href="#obranci">Obránci</a>
     </li>
-    <li class="nav-item barca-accent rounded">
+    <li class="nav-item barca-accent rounded m-2">
       <a class="nav-link" data-bs-toggle="tab" href="#zaloznici">Záložníci</a>
     </li>
-    <li class="nav-item barca-accent rounded">
+    <li class="nav-item barca-accent rounded m-2">
       <a class="nav-link" data-bs-toggle="tab" href="#utocnici">Útočníci</a>
     </li>
   </ul>
 
   
   <div class="tab-content">
-    <div id="brankari" class="container tab-pane active"><br>
-      <h3 class="text-center" style="text-decoration: underline;">Brankáři</h3>
-      <div class="container mt-3">
-  
-        
-  <div class="card" style="width:350px">
-    <img class="card-img-top" src="img/terstegen.webp" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Marc-Andre ter Stegen</h4>
-      <p class="card-text">Národnost <span class="flag-icons flag-icons-de"></span></p>
-      
-    </div>
-  </div>
-  <br>
 
+  
+  <div id="brankari" class=" tab-pane active"><br>
+    <h3 class="text-center" style="text-decoration: underline;">Brankáři</h3>
+    <div class=" mt-3">
+      <div class="row"> 
+        
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/terstegen.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Marc-Andre ter Stegen</h4>
+              <p class="card-text">Národnost <span class="fi fi-de m-2"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/pena.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Iñaki Peña</h4>
+              <p class="card-text">Národnost <span class="fi fi-es m-2"></span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/szcz.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Wojciech Szczęsny</h4>
+              <p class="card-text">Národnost <span class="fi fi-pl m-2"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
     </div>
-    <div id="obranci" class="container tab-pane fade"><br>
-      <h3>Obránci</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+      
+<div id="obranci" class=" tab-pane fade"><br>
+      <h3 class="text-center" style="text-decoration: underline;">Obránci</h3>
+    
+
+<div class="row">
+
+    <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/cubars.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Pau Cubarsí</h4>
+              <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+            </div>
+          </div>
+        </div>
+
+    <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/balde.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Alejandro Balde</h4>
+              <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+            </div>
+          </div>
+        </div>
+
+    <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/araujo.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Ronald Araujo</h4>
+              <p class="card-text">Národnost <span class="fi fi-uy"></span></p>
+            </div>
+          </div>
+        </div>
+</div>
+
+  <div class="row mt-3">
+
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/inigo.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Inigo Martinez</h4>
+              <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/christ.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Andreas Christensen</h4>
+              <p class="card-text">Národnost <span class="fi fi-dk"></span></p>
+            </div>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/kounde.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Jules Koundé</h4>
+              <p class="card-text">Národnost <span class="fi fi-fr"></span></p>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="img/eric.webp" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Eric Garcia</h4>
+              <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>    
+
+    <div id="zaloznici" class=" tab-pane fade"><br>
+  <h3 class="text-center" style="text-decoration: underline;">Záložníci</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/gavi.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Gavi</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
     </div>
-    <div id="zaloznici" class="container tab-pane fade"><br>
-      <h3>Záložníci</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/pedri.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Pedri</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
     </div>
-    <div id="utocnici" class="container tab-pane fade"><br>
-      <h3>Útočníci</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/torre.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Pablo Torre</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/fermin.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Fermin Lopez</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/casado.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Marc Casado</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/olmo.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Dani Olmo</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="row mt-3">
+      <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/frenkie.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Frenkie de Jong</h4>
+          <p class="card-text">Národnost <span class="fi fi-nl"></span></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div id="utocnici" class="tab-pane fade"><br>
+  <h3 class="text-center" style="text-decoration: underline;">Útočníci</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/ferran.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Ferran Torres</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/lewa.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Robert Lewandowski</h4>
+          <p class="card-text">Národnost <span class="fi fi-pl"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/fati.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Ansu Fati</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/raphinha.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Raphinha</h4>
+          <p class="card-text">Národnost <span class="fi fi-br"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/pau.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Pau Victor</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/lamiiine.webp" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Lamine Yamal</h4>
+          <p class="card-text">Národnost <span class="fi fi-es"></span></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
+
+  </div>
+  
+  
+  </div>
+
+
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

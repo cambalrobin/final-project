@@ -1,0 +1,23 @@
+.barca-primary {
+  background-color: rgb(168, 19, 62) ;
+  color: white;
+}
+
+.barca-secondary {
+  background-color: rgb(0, 77, 152);
+  color: white;
+}
+
+.barca-accent {
+  background-color: rgb(237, 187, 0) ;
+  color: black;
+}
+
+.barca-accent:hover {
+  background-color: #cc9900 ;
+  color: black;
+}
+
+.nav-tabs {
+      border-bottom: none ;
+    }
