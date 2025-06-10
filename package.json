@@ -5,7 +5,7 @@
     "bootswatch": "^5.3.6",
     "flag": "^5.0.1",
     "flag-icon": "^2.5.0",
-    "flag-icon-css": "^4.1.7",
+    "flag-icons": "^7.5.0",
     "icons": "^1.0.0",
     "tinymce": "^7.9.1"
   }

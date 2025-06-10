@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="barca-secondary">
+<body class="barca-secondary barca-secondary d-flex flex-column min-vh-100">
     
   <nav class="navbar navbar-expand-lg barca-primary" data-bs-theme="dark">
     <div class="container-fluid">
@@ -72,6 +72,7 @@
     </div>
   </nav>
 
+  <main class="flex-grow-1">
   <h1 class="mb-4 text-center">Stadion FC Barcelony – Spotify Camp Nou</h1>
 
   <div class="accordion" id="campNouAccordion">
@@ -125,6 +126,13 @@
     </div>
 
   </div>
+</main>
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <small>
+      © 2025 FC Barcelona |
+      <a href="dokumentace.pdf" class="text-white text-decoration-underline">Dokumentace (PDF)</a>
+    </small>
+  </footer>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -10,169 +10,165 @@
     <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="barca-secondary">
-    
+<body class="barca-secondary d-flex flex-column min-vh-100">
 
+  <!-- ========== NAVBAR ========== -->
   <nav class="navbar navbar-expand-lg barca-primary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" style="width: 90px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="FC Barcelona" style="width:90px">
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarMain"
+              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-  
-      <div class="collapse navbar-collapse " id="navbarColor01">
-        
-        <ul class="navbar-nav mx-auto text-center justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link  fs-4" href="index.html">Domů</a>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <!-- CENTRÁLNÍ MENU -->
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item"><a class="nav-link fs-4" href="index.html">Domů</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="index2.html">Hráči</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="index3.html">Stadion</a></li>
+
+          <!-- dropdown „Ostatní“ -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-4" href="#" role="button"
+               data-bs-toggle="dropdown">Ostatní</a>
+            <ul class="dropdown-menu barca-accent">
+              <li><a class="dropdown-item barca-primary" href="index5.html">Nejlepší střelci</a></li>
+              <li><a class="dropdown-item barca-primary" href="index4.html">Progress</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4" href="index2.html">Hráči</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4" href="index3.html">Stadion</a>
-          </li>
-          
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle fs-4" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ostatní</a>
-            <div class="dropdown-menu barca-accent">
-              <a class="dropdown-item barca-primary" href="index5.html">Nejlepší střelci</a>
-              <a class="dropdown-item barca-primary" href="index4.html">Progress</a>
-              
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-4" href="textarea.html">Kontaktujte nás</a>
-          </li>
-  
-          </ul>
-        
-        
-          <div class="nav-item dropdown">
-            
-              <li class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+          <li class="nav-item"><a class="nav-link fs-4" href="textarea.html">Kontaktujte nás</a></li>
+        </ul>
+
+        <!-- PRAVÁ STRANA – přihlášení -->
+        <ul class="navbar-nav ms-lg-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
               Přihlášení
-              </li>
-            <div class="dropdown-menu dropdown-menu-end p-4  barca-secondary" style="min-width: 250px;">
-              <form class="form" role="form">
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-end p-4 barca-secondary"
+                 style="min-width:250px;">
+              <form novalidate>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Vložte email">
+                  <label for="loginEmail" class="form-label">Email</label>
+                  <input type="email" id="loginEmail" class="form-control"
+                         placeholder="Vložte email" required>
                 </div>
                 <div class="mb-3">
-                  <label for="password" class="form-label">Heslo</label>
-                  <input type="password" class="form-control" id="password" placeholder="Vložte heslo">
+                  <label for="loginPass" class="form-label">Heslo</label>
+                  <input type="password" id="loginPass" class="form-control"
+                         placeholder="Vložte heslo" required>
                 </div>
-                <button type="submit" class="btn barca-accent">Přihlásit</button>
-                <a href="registrace.html" style="margin-left: 30px; color: #cc9900; " >Registrace</a>
+                <button class="btn barca-accent w-100" type="submit">Přihlásit</button>
+                <div class="text-center mt-2">
+                  <a href="registrace.html" style="color:#cc9900;">Registrace</a>
+                </div>
               </form>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
 
-<div class="container mt-5">
-  <h2 class="text-center mb-4">Registrace</h2>
+  <!-- ========== HLAVNÍ OBSAH ========== -->
+  <main class="flex-grow-1">
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Registrace</h2>
 
-  <form class="mx-auto" style="max-width: 500px;">
+      <form class="mx-auto needs-validation" style="max-width:500px;" novalidate>
+        <!-- LOGIN -->
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-circle-user" style="color:#edbb00;"></i></span>
+          <div class="form-floating flex-grow-1">
+            <input type="text" id="regLogin" class="form-control" placeholder="Login" required>
+            <label for="regLogin">Login</label>
+          </div>
+        </div>
 
+        <!-- HESLO 1 -->
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-lock" style="color:#edbb00;"></i></span>
+          <div class="form-floating flex-grow-1">
+            <input type="password" id="regPass1" class="form-control" placeholder="Heslo" required>
+            <label for="regPass1">Heslo</label>
+          </div>
+        </div>
 
-<div class="input-group mb-3">
-  <span class="input-group-text">
-    <i class="fa-solid fa-circle-user" style="color: #edbb00;"></i>
-  </span>
-  <div class="form-floating flex-grow-1">
-    <input type="text" class="form-control" id="login" placeholder="Login">
-    <label for="email">Login</label>
-  </div>
-</div>
+        <!-- HESLO 2 -->
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-lock" style="color:#edbb00;"></i></span>
+          <div class="form-floating flex-grow-1">
+            <input type="password" id="regPass2" class="form-control" placeholder="Zopakujte heslo" required>
+            <label for="regPass2">Zopakujte heslo</label>
+          </div>
+        </div>
 
+        <!-- JMÉNO -->
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-user" style="color:#edbb00;"></i></span>
+          <div class="form-floating flex-grow-1">
+            <input type="text" id="regFirstName" class="form-control" placeholder="Jméno" required>
+            <label for="regFirstName">Jméno</label>
+          </div>
+        </div>
 
-<div class="input-group mb-3">
-  <span class="input-group-text">
-    <i class="fa-solid fa-lock" style="color: #edbb00;"></i>
-  </span>
-  <div class="form-floating flex-grow-1">
-    <input type="password" class="form-control" id="heslo" placeholder="Heslo">
-    <label for="heslo">Heslo</label>
-  </div>
-</div>
+        <!-- PŘÍJMENÍ -->
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-user" style="color:#edbb00;"></i></span>
+          <div class="form-floating flex-grow-1">
+            <input type="text" id="regLastName" class="form-control" placeholder="Příjmení" required>
+            <label for="regLastName">Příjmení</label>
+          </div>
+        </div>
 
+        <!-- EMAIL -->
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:#edbb00;"></i></span>
+          <div class="form-floating flex-grow-1">
+            <input type="email" id="regEmail" class="form-control" placeholder="E-mail" required>
+            <label for="regEmail">E-mail</label>
+          </div>
+        </div>
 
-<div class="input-group mb-3">
-  <span class="input-group-text">
-    <i class="fa-solid fa-lock" style="color: #edbb00;"></i>
-  </span>
-  <div class="form-floating flex-grow-1">
-    <input type="password" class="form-control" id="heslo2" placeholder="Zopakujte heslo">
-    <label for="heslo2">Zopakujte heslo</label>
-  </div>
-</div>
+        <!-- STÁT -->
+        <div class="input-group mb-4">
+          <span class="input-group-text"><i class="fa-solid fa-flag" style="color:#edbb00;"></i></span>
+          <div class="form-floating flex-grow-1">
+            <select id="regCountry" class="form-select" required>
+              <option value="" selected disabled>Vyberte zemi</option>
+              <option value="cz">Česká republika</option>
+              <option value="sk">Slovensko</option>
+              <option value="de">Německo</option>
+              <option value="pl">Polsko</option>
+              <option value="at">Rakousko</option>
+              <option value="fr">Francie</option>
+              <option value="it">Itálie</option>
+              <option value="es">Španělsko</option>
+              <option value="hu">Maďarsko</option>
+              <option value="gb">Velká Británie</option>
+            </select>
+            <label for="regCountry">Stát</label>
+          </div>
+        </div>
 
-
-<div class="input-group mb-3">
-  <span class="input-group-text">
-    <i class="fa-solid fa-user" style="color: #edbb00;"></i>
-  </span>
-  <div class="form-floating flex-grow-1">
-    <input type="text" class="form-control" id="jmeno" placeholder="Jméno">
-    <label for="jmeno">Jméno</label>
-  </div>
-</div>
-
-
-<div class="input-group mb-3">
-  <span class="input-group-text">
-    <i class="fa-solid fa-user" style="color: #edbb00;"></i>
-  </span>
-  <div class="form-floating flex-grow-1">
-    <input type="text" class="form-control" id="prijmeni" placeholder="Příjmení">
-    <label for="prijmeni">Příjmení</label>
-  </div>
-</div>
-
-
-<div class="input-group mb-3">
-  <span class="input-group-text">
-    <i class="fa-solid fa-envelope" style="color: #edbb00;"></i>
-  </span>
-  <div class="form-floating flex-grow-1">
-    <input type="text" class="form-control" id="email" placeholder="E-mail">
-    <label for="email">E-mail</label>
-  </div>
-</div>
-
-
-<div class="input-group mb-3">
-
-  <span class="input-group-text">
-    <i class="fa-solid fa-flag" style="color: #edbb00;"></i>
-  </span>
-  <div class="form-floating flex-grow-1">
-      <select class="form-select" id="stat">
-        <option selected disabled>Vyberte zemi</option>
-        <option value="cz">Česká republika</option>
-        <option value="sk">Slovensko</option>
-        <option value="de">Německo</option>
-        <option value="pl">Polsko</option>
-        <option value="at">Rakousko</option>
-        <option value="fr">Francie</option>
-        <option value="it">Itálie</option>
-        <option value="es">Španělsko</option>
-        <option value="hu">Maďarsko</option>
-        <option value="gb">Velká Británie</option>
-      </select>
-      <label for="stat">Stát</label>
+        <button class="btn barca-accent w-100" type="submit">Registrovat</button>
+      </form>
     </div>
-</div>
+  </main>
 
-    <button type="submit" class="btn barca-accent w-100">Registrovat</button>
-  </form>
-</div>
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <small>© 2025 FC Barcelona | <a href="dokumentace.pdf" class="text-white text-decoration-underline">Dokumentace (PDF)</a></small>
+  </footer>
 
-    
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
