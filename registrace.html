@@ -12,88 +12,82 @@
 </head>
 <body class="barca-secondary d-flex flex-column min-vh-100">
 
-  <!-- ========== NAVBAR ========== -->
   <nav class="navbar navbar-expand-lg barca-primary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" alt="FC Barcelona" style="width:90px">
-      </a>
-
-      <button class="navbar-toggler" type="button"
-              data-bs-toggle="collapse" data-bs-target="#navbarMain"
-              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" style="width: 60px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <!-- CENTRÁLNÍ MENU -->
-        <ul class="navbar-nav mx-auto text-center">
-          <li class="nav-item"><a class="nav-link fs-4" href="index.html">Domů</a></li>
-          <li class="nav-item"><a class="nav-link fs-4" href="index2.html">Hráči</a></li>
-          <li class="nav-item"><a class="nav-link fs-4" href="index3.html">Stadion</a></li>
-
-          <!-- dropdown „Ostatní“ -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fs-4" href="#" role="button"
-               data-bs-toggle="dropdown">Ostatní</a>
-            <ul class="dropdown-menu barca-accent">
-              <li><a class="dropdown-item barca-primary" href="index5.html">Nejlepší střelci</a></li>
-              <li><a class="dropdown-item barca-primary" href="index4.html">Progress</a></li>
-            </ul>
+  
+      <div class="collapse navbar-collapse " id="navbarColor01">
+        
+        <ul class="navbar-nav mx-auto text-center justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link  fs-4" href="index.html">Domů</a>
           </li>
-
-          <li class="nav-item"><a class="nav-link fs-4" href="textarea.html">Kontaktujte nás</a></li>
-        </ul>
-
-        <!-- PRAVÁ STRANA – přihlášení -->
-        <ul class="navbar-nav ms-lg-3">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button"
-               data-bs-toggle="dropdown" aria-expanded="false">
-              Přihlášení
-            </a>
-
-            <div class="dropdown-menu dropdown-menu-end p-4 barca-secondary"
-                 style="min-width:250px;">
-              <form novalidate>
-                <div class="mb-3">
-                  <label for="loginEmail" class="form-label">Email</label>
-                  <input type="email" id="loginEmail" class="form-control"
-                         placeholder="Vložte email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="loginPass" class="form-label">Heslo</label>
-                  <input type="password" id="loginPass" class="form-control"
-                         placeholder="Vložte heslo" required>
-                </div>
-                <button class="btn barca-accent w-100" type="submit">Přihlásit</button>
-                <div class="text-center mt-2">
-                  <a href="registrace.html" style="color:#cc9900;">Registrace</a>
-                </div>
-              </form>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="index2.html">Hráči</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="index3.html">Stadion</a>
+          </li>
+          
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle fs-4" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ostatní</a>
+            <div class="dropdown-menu barca-accent">
+              <a class="dropdown-item barca-primary" href="index5.html">Nejlepší střelci</a>
+              <a class="dropdown-item barca-primary" href="index4.html">Progress</a>
+              
             </div>
           </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="textarea.html">Kontaktujte nás</a>
+          </li>
+  
+          </ul>
+        
+        
+          <div class="nav-item dropdown">
+            
+              <li class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Přihlášení
+              </li>
+            <div class="dropdown-menu dropdown-menu-end p-4  barca-secondary" style="min-width: 250px;">
+              <form class="form" role="form">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Vložte email">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Heslo</label>
+                  <input type="password" class="form-control" id="password" placeholder="Vložte heslo">
+                </div>
+                <button type="submit" class="btn barca-accent">Přihlásit</button>
+                <a href="registrace.html" style="margin-left: 30px; color: #cc9900; " >Registrace</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
 
-  <!-- ========== HLAVNÍ OBSAH ========== -->
+ 
   <main class="flex-grow-1">
-    <div class="container mt-5">
+    <div class="container-fluid">
       <h2 class="text-center mb-4">Registrace</h2>
 
       <form class="mx-auto needs-validation" style="max-width:500px;" novalidate>
-        <!-- LOGIN -->
+       
         <div class="input-group mb-3">
           <span class="input-group-text"><i class="fa-solid fa-circle-user" style="color:#edbb00;"></i></span>
           <div class="form-floating flex-grow-1">
-            <input type="text" id="regLogin" class="form-control" placeholder="Login" required>
-            <label for="regLogin">Login</label>
+            <input type="text" id="Login" class="form-control" placeholder="Login" required>
+            <label for="Login">Login</label>
           </div>
         </div>
 
-        <!-- HESLO 1 -->
+       
         <div class="input-group mb-3">
           <span class="input-group-text"><i class="fa-solid fa-lock" style="color:#edbb00;"></i></span>
           <div class="form-floating flex-grow-1">
@@ -102,7 +96,7 @@
           </div>
         </div>
 
-        <!-- HESLO 2 -->
+        
         <div class="input-group mb-3">
           <span class="input-group-text"><i class="fa-solid fa-lock" style="color:#edbb00;"></i></span>
           <div class="form-floating flex-grow-1">
@@ -111,7 +105,7 @@
           </div>
         </div>
 
-        <!-- JMÉNO -->
+       
         <div class="input-group mb-3">
           <span class="input-group-text"><i class="fa-solid fa-user" style="color:#edbb00;"></i></span>
           <div class="form-floating flex-grow-1">
@@ -120,7 +114,7 @@
           </div>
         </div>
 
-        <!-- PŘÍJMENÍ -->
+      
         <div class="input-group mb-3">
           <span class="input-group-text"><i class="fa-solid fa-user" style="color:#edbb00;"></i></span>
           <div class="form-floating flex-grow-1">
@@ -129,7 +123,7 @@
           </div>
         </div>
 
-        <!-- EMAIL -->
+      
         <div class="input-group mb-3">
           <span class="input-group-text"><i class="fa-solid fa-envelope" style="color:#edbb00;"></i></span>
           <div class="form-floating flex-grow-1">
@@ -138,7 +132,7 @@
           </div>
         </div>
 
-        <!-- STÁT -->
+   
         <div class="input-group mb-4">
           <span class="input-group-text"><i class="fa-solid fa-flag" style="color:#edbb00;"></i></span>
           <div class="form-floating flex-grow-1">
@@ -159,14 +153,14 @@
           </div>
         </div>
 
-        <button class="btn barca-accent w-100" type="submit">Registrovat</button>
+        <button class="btn barca-accent w-100 mb-4" type="submit">Registrovat</button>
       </form>
     </div>
   </main>
 
-  <!-- ========== FOOTER ========== -->
+  
   <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <small>© 2025 FC Barcelona | <a href="dokumentace.pdf" class="text-white text-decoration-underline">Dokumentace (PDF)</a></small>
+    <small>© 2025 FC Barcelona | <a href="dokumentace.pdf" class="text-white text-decoration-underline" target="_blank">Dokumentace (PDF)</a></small>
   </footer>
 
 
